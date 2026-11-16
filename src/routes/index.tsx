@@ -109,6 +109,7 @@ function Index() {
   return (
     <main className="relative h-screen min-h-[680px] w-full select-none overflow-hidden bg-background text-foreground">
       <img src={desk} alt="" width={1600} height={912}
+        style={{ maskImage: "radial-gradient(ellipse 50% 50% at 50% 55%, #000 70%, transparent 100%)", WebkitMaskImage: "radial-gradient(ellipse 50% 50% at 50% 55%, #000 70%, transparent 100%)" }}
         className="pointer-events-none absolute bottom-[-40px] left-1/2 w-[1150px] max-w-none -translate-x-1/2 mix-blend-multiply" />
 
       <header className="relative z-30 flex items-center justify-between px-6 py-9 text-[13px] md:px-14">
