@@ -149,10 +149,10 @@ function Index() {
                     objectFit: isOpen ? "contain" : "cover",
                     height: isOpen ? "100%" : "78%",
                     WebkitMaskImage: isOpen
-                      ? "radial-gradient(ellipse 50% 50% at 50% 50%, #000 55%, transparent 100%)"
+                      ? "radial-gradient(ellipse 50% 50% at 50% 50%, #000 35%, transparent 72%)"
                       : "linear-gradient(to bottom, transparent 0%, #000 22%)",
                     maskImage: isOpen
-                      ? "radial-gradient(ellipse 50% 50% at 50% 50%, #000 55%, transparent 100%)"
+                      ? "radial-gradient(ellipse 50% 50% at 50% 50%, #000 35%, transparent 72%)"
                       : "linear-gradient(to bottom, transparent 0%, #000 22%)",
                     transition: `height ${DUR}ms ${EASE}`,
                   }} />
@@ -183,7 +183,7 @@ function Index() {
 
               <button aria-label="Close story"
                 onClick={(e) => { e.stopPropagation(); setOpen(null); }}
-                className="absolute bottom-10 left-[18%] grid h-11 w-11 place-items-center rounded-full bg-primary text-xl font-light text-primary-foreground shadow-accent"
+                className="absolute bottom-10 left-[10%] grid h-11 w-11 place-items-center rounded-full bg-primary text-xl font-light text-primary-foreground shadow-accent"
                 style={{
                   opacity: isOpen ? 1 : 0, pointerEvents: isOpen ? "auto" : "none",
                   transform: `scale(${isOpen ? 1 : 0.4}) rotate(${isOpen ? 0 : -90}deg)`,
