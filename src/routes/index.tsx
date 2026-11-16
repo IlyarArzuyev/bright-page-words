@@ -34,9 +34,9 @@ const stories: Story[] = [
 ];
 
 const N = stories.length;
-const CARD_W = 240;
-const CARD_H = 330;
-const GAP = 80;
+const CARD_W = 210;
+const CARD_H = 285;
+const GAP = 70;
 const STEP = CARD_W + GAP;
 const OPEN_W = 620;
 const EASE = "cubic-bezier(0.77, 0, 0.175, 1)";
@@ -128,7 +128,7 @@ function Index() {
         </nav>
       </header>
 
-      <section className="absolute inset-x-0 top-[130px] z-10" style={{ height: CARD_H + 80 }}>
+      <section className="absolute inset-x-0 top-[110px] z-10" style={{ height: CARD_H + 80 }}>
         {items.map((k) => {
           const s = stories[k % N]!;
           const { x, w } = layout(k);
