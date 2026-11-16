@@ -129,7 +129,7 @@ function Index() {
 
       <section className="absolute inset-x-0 top-[130px] z-10" style={{ height: CARD_H + 80 }}>
         {items.map((k) => {
-          const s = stories[k % N];
+          const s = stories[k % N]!;
           const { x, w } = layout(k);
           const isOpen = open === k;
           return (
